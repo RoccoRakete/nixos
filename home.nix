@@ -9,9 +9,6 @@
 
       #home.username = "martin";
 
-      # add the home manager module
-
-
       programs = {
         git = {
           enable = true;
@@ -35,6 +32,7 @@
           shellAliases = {
             ll = "ls -l";
             update = "sudo nixos-rebuild switch";
+            upgrade = "nixos-rebuild switch --upgrade";
             v = "nvim";
           };
           zplug = {
